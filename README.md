@@ -1,2 +1,2 @@
 # Bud
-Generic template library for traversing collections of objects.
+C++ Generic template library for traversing object collections.
