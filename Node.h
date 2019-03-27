@@ -32,7 +32,7 @@ void Node<T>::purgeFurthest() {
     unsigned index = 0;
     double maxDist = 0;
     for (unsigned i = 0; i < neighbours.size(); ++i) {
-        const double dist = (position -  *neighbours[i]).norm();
+        const double dist = (position -  *neighbours[i]).normSquare();
         if (dist > maxDist) {
             index = i;
             maxDist = dist;
