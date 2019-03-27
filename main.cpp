@@ -10,7 +10,7 @@ int main() {
         testnums.push_back(i);
     }
 
-    std::vector<Node<int> > list = Bud<int>::nearestNeighbours(testnums, 3);
+    std::vector<Node<int> > list = Bud<int>::nearestNeighbours(testnums, 4);
     
     for (auto& i : list) {
         std::cout << "Position: " << i.position << "\n";

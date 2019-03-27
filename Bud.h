@@ -23,7 +23,7 @@ std::vector<Node<T> > Bud<T>::nearestNeighbours(std::vector<T>& vertices, unsign
             //Make sure we don't count self as a neighbour.
             if (i != k) {
                 nodes[i].neighbours.push_back(&vertices[k]);
-                if (nodes[i].neighbours.size() >  numNeighs) {
+                while (nodes[i].neighbours.size() > numNeighs) {
                     nodes[i].purgeFurthest();
                 }
             }
